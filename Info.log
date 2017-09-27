@@ -1,6 +1,17 @@
 List of Commands entered:
+NOTES: sometimes you dont see updated files in your node_modules, you have to press f5 on whole project to see changes)
 
 1. npm install angular     			(installs angularjs)
+**notes**
+- the above npm install angular command just installs angularjs in to your node_modues folder. 
+- In order to update angular to package.json also(i.e. to add to dev_dependencies) we use following command:
+  
+  npm install angular -D
+  
+  npm install routes -D             (to add routing run this command, you can see routes directory in node_modules after this command runs successfully). 
+  
+ NOTE: i am running above commands from my end so that package.json updated accordingly, you dont have to run them again. 
+
 2. npm install -g http-server 		(http-server is a simple, zero-configuration command-line http server. 
 									 It is powerful enough for production usage, but it's simple and hackable enough to be used for testing, 
 								 	local development, and learning.)
