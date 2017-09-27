@@ -1,0 +1,7 @@
+List of Commands entered:
+
+1. npm install angular     			(installs angularjs)
+2. npm install -g http-server 		(http-server is a simple, zero-configuration command-line http server. 
+									 It is powerful enough for production usage, but it's simple and hackable enough to be used for testing, 
+								 	local development, and learning.)
+3. http-server -o					(to start a server). It should open a index page in browser. 
