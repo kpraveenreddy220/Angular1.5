@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="test">
+<head>
+<title> Angular Project</title>
+<script src="/node_modules/angular/angular.js"></script>
+<script src="/node_modules/routes/dist/routes.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+
+<script src="app.js"></script>
+</head>
+<body>
+
+<div>
+
+<h1> Welcome To Test Project !!! </h1>
+
+
+<div>
+<p> click on below link to login: </p> <br/>
+</div>
+<br/>
+<a href="#/!">Index</a>
+<a href="#login">Login</a>
+</div>
+<div ng-view=""></div>
+
+</body>
+</html>

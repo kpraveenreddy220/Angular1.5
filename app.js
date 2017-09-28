@@ -1,55 +1,28 @@
-var app = angular.module("App", ['ngRoute']);
+var app = angular.module("test", ["ngRoute"]);
 
-
-app.config(function ($routeProvider){								//adding routes to different views 
-    $routeProvider
-    .when('/welcome',
-    	    {
-    	        templateURL: 'Welcome.html'
-
-    	    }
-    .when('/login',
-    {
-        controller: 'Login',
-        templateURL: 'src/Login.html'
-
-    }
-    )
-    .when('/register',
-    {
-        controller: 'Register',
-        templateURL: 'src/Register.html'
-
+app.config(function ($routeProvider) {
+    
+	$routeProvider
+    
+    .when("/", {
+        templateUrl : "index.html"
     })
-      .when('/contact',
-    {
-        controller: 'Contact',
-        templateURL: 'src/Contact.html'
+    .when("/login", {
+        templateUrl : "src/Login.html",
+        controller : "login"
     })
-    .otherwise({ redirectTo: '/'});
+    .otherwise ({
+    	
+    	redirectTo : "/"
+    	
+    });   
+    });
+
+	
+
+
+app.controller('login', function ($scope){
+	
+	$scope.msg = "You logged in";
+		
 });
-
-	
-var controllers = {}; // common variable for multiple controllers I want to use.
-
-controllers.Login = function ($scope){
-	
-	// this is for login controller
-	
-	
-}
-
-controllers.Register = function ($scope){
-	
-	// this is for Register controller
-	
-	
-}
-controllers.Contact = function ($scope){
-	
-	// this is for Contact controller
-	
-	
-}
-
-app.controller(controllers);
